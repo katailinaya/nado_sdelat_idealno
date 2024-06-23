@@ -4,10 +4,7 @@
   min-width: 800px;
   display: flex;
   margin: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
 }
 
 video {
@@ -16,6 +13,14 @@ video {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.page::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  inset: 0;
+  background-color: #ffffff4d;
 }
 
 .page__heading {
@@ -33,14 +38,6 @@ video {
   letter-spacing: 4.06px;
   text-transform: uppercase;
   z-index: 2;
-}
-
-.page::before {
-  position: absolute;
-  z-index: 1;
-  content: "";
-  inset: 0;
-  background-color: #ffffff4d;
 }
 
 .page__heading::after {
@@ -71,7 +68,7 @@ video {
   height: 158px;
   padding: 36px 44px;
   color: black;
-  background-color: #fff;
+  background-color: white;
   border-radius: 20px;
   border: 2px solid black;
   border-bottom: 14px solid black;
