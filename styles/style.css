@@ -5,6 +5,7 @@
   display: flex;
   margin: 0;
   inset: 0;
+  background-color: #fdafe7;
 }
 
 video {
@@ -13,6 +14,7 @@ video {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  inset: 0;
 }
 
 .page::before {
@@ -47,6 +49,7 @@ video {
 
 .page__heading:hover {
   color: #4c4c4c;
+  cursor: default;
 }
 
 .page__heading:hover::before {
@@ -61,15 +64,14 @@ video {
   text-transform: none;
   text-align: start;
   position: absolute;
-  top: 181px;
-  right: 22px;
+  top: 180px;
+  right: 20px;
   white-space: pre;
   width: 742px;
-  height: 158px;
   padding: 36px 44px;
   color: black;
   background-color: white;
   border-radius: 20px;
-  border: 2px solid black;
-  border-bottom: 14px solid black;
+  border: 2px solid currentColor;
+  border-bottom: 14px solid currentColor;
 }
